@@ -1,19 +1,12 @@
 package com.itheima.config;
 
-import com.alibaba.druid.pool.DruidDataSource;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-
-import javax.sql.DataSource;
-
-@Configuration
-@PropertySource("classpath:jdbc.properties")
+//@Configuration
+//@PropertySource("classpath:application.properties")
+//@EnableConfigurationProperties(JdbcProperties.class)
 public class JdbcConfig {
 
 
-    @Value("${jdbc.driverClassName}")
+    /*@Value("${jdbc.driverClassName}")
     String driverClassName;
     @Value("${jdbc.url}")
     String url;
@@ -31,6 +24,23 @@ public class JdbcConfig {
         dataSource.setPassword(password);
 
         return dataSource;
-    }
+    }*/
+
+    /*@Bean
+    public DataSource dataSource(JdbcProperties jdbcProperties){
+        DruidDataSource dataSource = new DruidDataSource();
+        dataSource.setDriverClassName(jdbcProperties.getDriverClassName());
+        dataSource.setUrl(jdbcProperties.getUrl());
+        dataSource.setUsername(jdbcProperties.getUsername());
+        dataSource.setPassword(jdbcProperties.getPassword());
+
+        return dataSource;
+    }*/
+
+    /*@Bean
+    @ConfigurationProperties(prefix = "jdbc")
+    public DruidDataSource dataSource(){
+        return new DruidDataSource();
+    }*/
 
 }
