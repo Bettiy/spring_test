@@ -9,12 +9,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 @RestController
 public class HelloController {
 
-    @Autowired
+    @Resource
     private DataSource dataSource;
 
     @Value("${itcast.url}")

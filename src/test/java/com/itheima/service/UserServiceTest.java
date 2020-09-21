@@ -20,7 +20,4 @@ public class UserServiceTest {
         System.out.println(byId);
     }
 
-    @Test
-    public void save() {
-    }
 }
