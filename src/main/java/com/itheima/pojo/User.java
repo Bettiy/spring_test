@@ -16,15 +16,25 @@ import java.util.Date;
 public class User {
 
     @Id //标志是主键
-    @KeySql(useGeneratedKeys = true)
+    @KeySql(useGeneratedKeys = true)//主键回填
     private Long id;
+
     private String user_name;
+
     private String password;
+
     private String name;
+
     private Integer age;
+
     private Integer sex;
+
     private Date birthday;
+
     private String note;
+
     private Date created;
+
     private Date updated;
+
 }
