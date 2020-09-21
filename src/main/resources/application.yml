@@ -24,3 +24,11 @@ logging:
     com.itheima: debug
     org.springframework: info
 
+mybatis:
+  #实体类别名包路径
+  type-aliases-package: com.itheima.pojo
+  #映射文件路径
+  #mapper-locations: classpath:mappers/*.xml
+  configuration:
+    #日志配置
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
