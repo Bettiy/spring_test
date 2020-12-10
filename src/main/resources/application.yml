@@ -1,8 +1,8 @@
-jdbc:
-  driverClassName: com.mysql.jdbc.Driver
-  url: jdbc:mysql://127.0.0.1:3360/springboot_test
-  username: root
-  password: root
+#jdbc:
+#  driverClassName: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://127.0.0.1:3360/springboot_test
+#  username: root
+#  password: root
 
 #\u6FC0\u6D3B\u914D\u7F6E\u6587\u4EF6\uFF1B\u9700\u8981\u6307\u5B9A\u5176\u5B83\u7684\u914D\u7F6E\u9879\u540D\u79F0
 spring:
@@ -35,5 +35,3 @@ mybatis:
   configuration:
     #日志配置
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
-sb黄浩

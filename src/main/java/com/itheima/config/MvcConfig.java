@@ -6,16 +6,25 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * @author Betty
+ */
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
 
-    //注册拦截器
+    /**
+     *
+     * @return hj
+     */
     @Bean
     public MyInterceptor myInterceptor(){
         return new MyInterceptor();
     }
 
-    //添加拦截器到spring mvc拦截器链
+    /**
+     * 添加拦截器到spring mvc拦截器链
+     * @param registry 类
+     */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(myInterceptor()).addPathPatterns("/*");
