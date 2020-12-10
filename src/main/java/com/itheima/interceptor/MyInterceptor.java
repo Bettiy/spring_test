@@ -7,6 +7,9 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * @author Administrator
+ */
 @Slf4j
 public class MyInterceptor implements HandlerInterceptor {
     @Override
